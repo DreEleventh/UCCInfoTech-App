@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/coursesView"
+        android:icon="@drawable/ic_courses"
+        android:title="Courses"/>
+
+    <item
+        android:id="@+id/admissionsView"
+        android:icon="@drawable/ic_admissions"
+        android:title="Admissions"/>
+
+    <item
+        android:id="@+id/socialMediaView"
+        android:icon="@drawable/ic_social_media"
+        android:title="Social Media"/>
+
+    <item
+        android:id="@+id/staffDirectoryView"
+        android:icon="@drawable/ic_staff_directory"
+        android:title="Social Media"/>
+
+
+</menu>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/admissionsLayout"
+    tools:context=".Admissions">
+
+    <TextView
+        android:id="@+id/amitID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admissions Requirements"
+        android:textSize="26dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/requirementOneID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- To be unconditionally admitted to complete UCC undergraduate programmes, individuals should possess a minimum of five (5) subjects at the GCE or CSEC level (including the mandatory English Language and Mathematics) at grades A, B, C or 1, 2, 3 respectively. A CSEC pass at level 3 must have been obtained since 1998."
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:lineSpacingExtra="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="@id/amitID"
+        app:layout_constraintTop_toBottomOf="@id/amitID" />
+
+    <TextView
+        android:id="@+id/requirementTwoID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Candidates who have a minimum of 4 CXCs can also apply pending the outstanding CXC subjects or can opt to do UCC replacement courses Core Mathematics, English for Academic Purpose and Fundamentals of Accounting."
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:lineSpacingExtra="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="@id/requirementOneID"
+        app:layout_constraintTop_toBottomOf="@id/requirementOneID" />
+
+    <TextView
+        android:id="@+id/requirementThreeID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Candidates who have a minimum of 4 CXCs can also apply pending the outstanding CXC subjects or can opt to do UCC replacement courses Core Mathematics, English for Academic Purpose and Fundamentals of Accounting."
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:lineSpacingExtra="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="@id/requirementTwoID"
+        app:layout_constraintTop_toBottomOf="@id/requirementTwoID" />
+
+    <Button
+        android:id="@+id/apply_now_btn"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="52dp"
+        android:text="Apply Now"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/requirementThreeID" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

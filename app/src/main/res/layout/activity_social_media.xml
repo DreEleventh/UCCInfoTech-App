@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/socialMediaLayout"
+    tools:context=".SocialMedia">
+
+    <TextView
+        android:id="@+id/socialMediaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:text="UCC Social Media links"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="81dp" />
+
+    <ImageView
+        android:id="@+id/facebookBtn"
+        android:layout_width="87dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginStart="55dp"
+        android:src="@drawable/img_facebook"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/instagramBtn"
+        android:layout_width="87dp"
+        android:layout_height="86dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="290dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/img_instagram"
+        app:layout_constraintLeft_toRightOf="@id/facebookBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="188dp" />
+
+    <ImageView
+        android:id="@+id/twitterBtn"
+        android:layout_width="87dp"
+        android:layout_height="86dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="290dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/img_twitter"
+        app:layout_constraintLeft_toRightOf="@id/instagramBtn"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
