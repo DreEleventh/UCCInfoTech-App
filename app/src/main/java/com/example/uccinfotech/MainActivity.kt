@@ -28,16 +28,26 @@ class MainActivity : AppCompatActivity() {
 
         binding.navView.setNavigationItemSelectedListener {
             when(it.itemId){
+                R.id.staffDirectoryView -> {
+                    val intent = Intent(this, StaffDirectory::class.java)
+                    startActivity(intent)
+                }
+
+                R.id.coursesView -> {
+                    val intent = Intent(this, Courses::class.java)
+                    startActivity(intent)
+                }
+
                 R.id.admissionsView -> {
                     val intent = Intent(this, Admissions::class.java)
                     startActivity(intent)
                 }
 
-                R.id.coursesView -> Toast.makeText(applicationContext,
-                    "Courses View", Toast.LENGTH_SHORT).show()
+                R.id.socialMediaView -> {
+                    val intent = Intent(this, SocialMedia::class.java)
+                    startActivity(intent)
+                }
 
-                R.id.socialMediaView -> Toast.makeText(applicationContext,
-                    "Social View", Toast.LENGTH_SHORT).show()
             }
             true
         }

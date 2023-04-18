@@ -7,4 +7,11 @@
     android:id="@+id/coursesLayout"
     tools:context=".Courses">
 
+    <ListView
+        android:id="@+id/courseView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="1dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
