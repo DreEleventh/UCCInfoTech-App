@@ -32,12 +32,13 @@ class UCCAppDatabase {
 
     private var sqlDataB: SQLiteDatabase? = null
 
-    constructor(context: Context): this(){
+    constructor(context: Context): this() {
         val dataBase = UccAppDataHelper(context)
         sqlDataB = dataBase.writableDatabase
     }
 
     constructor()
+
 
     inner class UccAppDataHelper(context: Context):
         SQLiteOpenHelper(context, databaseName, null, dbVersion){

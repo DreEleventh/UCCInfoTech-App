@@ -12,69 +12,62 @@
     app:cardElevation="3dp"
     app:cardUseCompatPadding="true">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:padding="10dp">
+        android:padding="10dp"
+        android:gravity="end|bottom"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/course_code"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text="Course Code"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/course_name"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Course Name"
             android:textColor="@color/black"
-            android:textSize="15sp"
-            app:layout_constraintStart_toStartOf="@+id/course_code"
-            app:layout_constraintTop_toBottomOf="@+id/course_code"/>
+            android:textSize="15sp"/>
 
         <TextView
-            android:id="@+id/credits"
-            android:layout_width="wrap_content"
+            android:id="@+id/course_credits"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="3"
             android:textColor="@color/black"
-            android:textSize="15sp"
-            app:layout_constraintStart_toStartOf="@+id/course_name"
-            app:layout_constraintTop_toBottomOf="@+id/course_name"/>
+            android:textSize="15sp"/>
 
         <TextView
             android:id="@+id/course_pre_requisites"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Coures Pre-reqquisites"
             android:textColor="@color/black"
-            android:textSize="15sp"
-            app:layout_constraintStart_toStartOf="@+id/credits"
-            app:layout_constraintTop_toBottomOf="@+id/credits"/>
+            android:textSize="15sp"/>
 
         <TextView
             android:id="@+id/course_description"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Coures Pre-reqquisites"
             android:textColor="@color/black"
-            android:textSize="15sp"
-            app:layout_constraintStart_toStartOf="@+id/course_pre_requisites"
-            app:layout_constraintTop_toBottomOf="@+id/course_pre_requisites"/>
+            android:textSize="15sp"/>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
 
 </androidx.cardview.widget.CardView>
